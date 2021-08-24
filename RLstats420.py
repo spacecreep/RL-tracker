@@ -12,7 +12,7 @@ def infosJoueurRL(joueur): # pseudo du joueur en parametre (str), je sais pas co
 
     driver.get("https://rocketleague.tracker.network/rocket-league/profile/epic/"+joueur+"/overview") #connexion au site
     wait = WebDriverWait(driver, 5)
-    nb_vict = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#app > div.trn-wrapper > div.trn-container > div > main > div.content.no-card-margin > div.site-container.trn-grid.trn-grid--vertical.trn-grid--small > div.trn-grid__sidebar-left > aside > div.overview.card.bordered.header-bordered.responsive > div > div:nth-child(1) > div > div.numbers > span.value")))
+    nb_vict = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#app > div.trn-wrapper > div.trn-container > div > main > div.content.no-card-margin > div.site-container.trn-grid.trn-grid--vertical.trn-grid--small > div.trn-grid__sidebar-left > aside > div.overview.card.bordered.header-bordered.responsive > div > div:nth-child(1) > div > div.numbers > span.value"))) #On sélectionne le path de l'élément css que l'on veut
     nb_vict_fr=""
     for char in nb_vict.text:
         if char!=',':
