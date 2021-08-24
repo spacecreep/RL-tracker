@@ -1,4 +1,4 @@
-#Il faut installer selenium (avec pip par exemple : pip install selenium) et placer chromedriver.exe (je le mettrai sur github) dans le meme dossier que du fichier .py
+#Il faut installer selenium (avec pip par exemple : pip install selenium) et placer chromedriver.exe (je le mettrai sur github) dans le meme dossier que celui du fichier .py
 from selenium.webdriver.chrome.options import Options 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
